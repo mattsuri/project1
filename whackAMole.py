@@ -10,6 +10,11 @@ green = Color(0x00FF00, 1)
 blue = Color(0x0000FF, 1)
 black = Color(0x000000, 1) 
 
+RADIUS = 100 #radius of circles
+GAP = 250 #gap length between circle centers
+
+
+
 def mouseClick(event):
     print(event.x)
     print(event.y)
@@ -28,11 +33,11 @@ if __name__ == "__main__":
     blackOutline = LineStyle(1, black)
     
     
-    redCircle = CircleAsset(100, blackOutline, red) #radius, outline, fill
+    redCircle = CircleAsset(RADIUS, blackOutline, red) #radius, outline, fill
     for i in range (0,3):
-        height = 50 + i*250
+        height = 50 + i*GAP
         for i in range (0,3):
-            Sprite(redCircle, (20 + i*250, height ))
+            Sprite(redCircle, (50 + i*GAP, height ))
             
             
     
