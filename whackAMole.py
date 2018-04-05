@@ -13,14 +13,16 @@ black = Color(0x000000, 1)
 RADIUS = 100 #radius of circles
 GAP = 250 #gap distance between circle centers
 BORDEREDGE = 50 #border distance
+DIAMETER = RADIUS * 2
 
 
 
 def mouseClick(event):
     print(event.x)
     print(event.y)
-    if event.x < 200 and event.y < 200:
-        print("1")
+    
+    if event.x < (BORDEREDGE + DIAMETER) and event.x > BORDEREDGE*1 and event.y < (BORDEREDGE + DIAMETER) and event.y > BORDEREDGE:
+        print("CIRCLE 1")
         
 
 
