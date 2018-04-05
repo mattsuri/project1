@@ -36,9 +36,9 @@ if __name__ == "__main__":
     
     redCircle = CircleAsset(RADIUS, blackOutline, red) #radius, outline, fill
     for i in range (0,3):
-        height = 50 + i*GAP
+        height = BORDEREDGE + i*GAP
         for i in range (0,3):
-            Sprite(redCircle, (50 + i*GAP, height ))
+            Sprite(redCircle, (BORDEREDGE + i*GAP, height ))
             
             
     
