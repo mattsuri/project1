@@ -20,9 +20,9 @@ DIAMETER = RADIUS * 2
 def mouseClick(event):
     print(event.x)
     print(event.y)
-    
-    if event.x < (BORDEREDGE + DIAMETER) and event.x > BORDEREDGE*1 and event.y < (BORDEREDGE + DIAMETER) and event.y > BORDEREDGE:
-        print("CIRCLE 1")
+    for i in range(1,4)
+        if event.x < (BORDEREDGE + DIAMETER) and event.x > BORDEREDGE*1 and event.y < (BORDEREDGE + DIAMETER) and event.y > BORDEREDGE:
+            print("CIRCLE", str(1+i)
         
 
 
