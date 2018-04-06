@@ -22,7 +22,7 @@ def mouseClick(event):
     print(event.y)
     for i in range(1,4):
         if event.y > (BORDEREDGE*i + DIAMETER*(i-1) and event.y < (BORDEREDGE*i + DIAMETER*i)):
-            row = i*3
+            row = (i-1)*3
             for col in range(1,4):
                 if event.x > (BORDEREDGE*i + DIAMETER*(i-1)) and event.x < (BORDEREDGE*i + DIAMETER*i):
                     print("CIRCLE", str(row+col))
