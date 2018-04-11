@@ -13,7 +13,7 @@ black = Color(0x000000, 1)
 RADIUS = 100 #radius of circles
 GAP = 250 #gap distance between circle centers
 BORDEREDGE = 50 #border distance
-DIAMETER = RADIUS * 2
+DIAMETER = 200
 
 
 
