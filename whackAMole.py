@@ -18,15 +18,44 @@ GAP = 250 #gap distance between circle centers
 BORDEREDGE = 50 #border distance
 DIAMETER = 200
 
-
+def step():
+    data['frames'] += 1
+    if data['frames'] % 100 == 0:
+        moleSpawner()
+        
 def moleSpawner():
     num = randint(1,9)
+    data["frames"]=0
     
     if num == 1:
         data["circle 1"] = True
+        Sprite(redCircle, (50 + 0*250, 50 + 250*0 ))
+    if num == 2:
+        data["circle 2"] = True
+        Sprite(redCircle, (50 + 1*250, 50 + 250*0 ))
+    if num == 3:
+        data["circle 2"] = True
+        Sprite(redCircle, (50 + 2*250, 50 + 250*0 ))
+    if num == 4:
+        data["circle 1"] = True
+        Sprite(redCircle, (50 + 0*250, 50 + 250*1 ))
+    if num == 5:
+        data["circle 2"] = True
+        Sprite(redCircle, (50 + 1*250, 50 + 250*1 ))
+    if num == 6:
+        data["circle 2"] = True
+        Sprite(redCircle, (50 + 2*250, 50 + 250*1 ))
+    if num == 7:
+        data["circle 1"] = True
+        Sprite(redCircle, (50 + 0*250, 50 + 250*2 ))
+    if num == 8:
+        data["circle 2"] = True
+        Sprite(redCircle, (50 + 1*250, 50 + 250*2 ))
+    if num == 9:
+        data["circle 2"] = True
+        Sprite(redCircle, (50 + 2*250, 50 + 250*2 ))
         
-    
-
+        
 
 def mouseClick(event):
     print(event.x)
@@ -69,12 +98,21 @@ def mouseClick(event):
     data["circle 9"] = False
 
 
+def score():
+    
     
 
 
 
 
 if __name__ == "__main__":
+    
+    data = {}
+    data['score'] = 0
+    data['frames'] = 0
+
+    
+    
     blackOutline = LineStyle(1, black)
     
     redCircle = CircleAsset(RADIUS, blackOutline, red)
