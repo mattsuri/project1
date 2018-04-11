@@ -4,17 +4,28 @@
 
 
 from ggame import *
+from random import randint
 
 red = Color(0xFF0000, 1) #this is the color red
 green = Color(0x00FF00, 1)
 blue = Color(0x0000FF, 1)
 black = Color(0x000000, 1) 
+white = Color(0xFFFFFF, 1) 
+
 
 RADIUS = 100 #radius of circles
 GAP = 250 #gap distance between circle centers
 BORDEREDGE = 50 #border distance
 DIAMETER = 200
 
+
+def moleSpawner():
+    num = randint(1,9)
+    
+    if num == 1:
+        data["circle 1"] = True
+        
+    
 
 
 def mouseClick(event):
@@ -47,7 +58,15 @@ def mouseClick(event):
     if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750:
         print("CIRCLE", 9) 
         
-
+    data["circle 1"] = False
+    data["circle 2"] = False
+    data["circle 3"] = False
+    data["circle 4"] = False
+    data["circle 5"] = False
+    data["circle 6"] = False
+    data["circle 7"] = False
+    data["circle 8"] = False    
+    data["circle 9"] = False
 
 
     
@@ -58,12 +77,13 @@ def mouseClick(event):
 if __name__ == "__main__":
     blackOutline = LineStyle(1, black)
     
+    redCircle = CircleAsset(RADIUS, blackOutline, red)
     
-    redCircle = CircleAsset(RADIUS, blackOutline, red) #radius, outline, fill
+    whiteCircle = CircleAsset(RADIUS, blackOutline, white) #radius, outline, fill
     for i in range (0,3):
         height = BORDEREDGE + i*GAP
         for i in range (0,3):
-            Sprite(redCircle, (BORDEREDGE + i*GAP, height ))
+            Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
             
             
     
