@@ -20,15 +20,33 @@ DIAMETER = RADIUS * 2
 def mouseClick(event):
     print(event.x)
     print(event.y)
-    for i in range(1,4):
-        if event.y > (BORDEREDGE*i + DIAMETER*(i-1) and event.y < (BORDEREDGE*i + DIAMETER*i)):
-            row = (i-1)
-            for col in range(1,4):
-                if event.x > (BORDEREDGE*i + DIAMETER*(i-1)) and event.x < (BORDEREDGE*i + DIAMETER*i):
-                    print("CIRCLE", str(row+col))
-                    print("Row: ", row)
-                    print("Col: ", col)
-                    break
+    
+    
+        #ROW 1
+    if event.y > (BORDEREDGE*1 + DIAMETER*(0) and event.y < (BORDEREDGE*1 + DIAMETER*1) and event.x > (BORDEREDGE*1 + DIAMETER*(0)) and event.x < (BORDEREDGE*1 + DIAMETER*1)):
+        print("CIRCLE", 1)
+    if event.y > (BORDEREDGE*1 + DIAMETER*(0) and event.y < (BORDEREDGE*1 + DIAMETER*1) and event.x > (BORDEREDGE*2 + DIAMETER*(1)) and event.x < (BORDEREDGE*2 + DIAMETER*2)):
+        print("CIRCLE", 2)
+    if event.y > (BORDEREDGE*1 + DIAMETER*(0) and event.y < (BORDEREDGE*1 + DIAMETER*1) and event.x > (BORDEREDGE*3 + DIAMETER*(2)) and event.x < (BORDEREDGE*3 + DIAMETER*3)):
+        print("CIRCLE", 3) 
+        
+        
+        #ROW 2
+    if event.y > (BORDEREDGE*2 + DIAMETER*(1) and event.y < (BORDEREDGE*2 + DIAMETER*2) and event.x > (BORDEREDGE*1 + DIAMETER*(0)) and event.x < (BORDEREDGE*1 + DIAMETER*1)):
+        print("CIRCLE", 4)
+    if event.y > (BORDEREDGE*2 + DIAMETER*(1) and event.y < (BORDEREDGE*2 + DIAMETER*2) and event.x > (BORDEREDGE*2 + DIAMETER*(1)) and event.x < (BORDEREDGE*2 + DIAMETER*2)):
+        print("CIRCLE", 5)
+    if event.y > (BORDEREDGE*2 + DIAMETER*(1) and event.y < (BORDEREDGE*2 + DIAMETER*2) and event.x > (BORDEREDGE*3 + DIAMETER*(2)) and event.x < (BORDEREDGE*3 + DIAMETER*3)):
+        print("CIRCLE", 6)
+        
+        #ROW3
+    if event.y > (BORDEREDGE*3 + DIAMETER*(2) and event.y < (BORDEREDGE*3 + DIAMETER*3) and event.x > (BORDEREDGE*1 + DIAMETER*(0)) and event.x < (BORDEREDGE*1 + DIAMETER*1)):
+        print("CIRCLE", 7)
+    if event.y > (BORDEREDGE*3 + DIAMETER*(2) and event.y < (BORDEREDGE*3 + DIAMETER*3) and event.x > (BORDEREDGE*2 + DIAMETER*(1)) and event.x < (BORDEREDGE*2 + DIAMETER*2)):
+        print("CIRCLE", 8)
+    if event.y > (BORDEREDGE*3 + DIAMETER*(2) and event.y < (BORDEREDGE*3 + DIAMETER*3) and event.x > (BORDEREDGE*3 + DIAMETER*(2)) and event.x < (BORDEREDGE*3 + DIAMETER*3)):
+        print("CIRCLE", 9)
+    
         
 
 
