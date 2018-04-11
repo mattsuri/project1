@@ -23,30 +23,29 @@ def mouseClick(event):
     
     
         #ROW 1
-    if event.y > (BORDEREDGE*1 + DIAMETER*(0) and event.y < (BORDEREDGE*1 + DIAMETER*1) and event.x > (BORDEREDGE*1 + DIAMETER*(0)) and event.x < (BORDEREDGE*1 + DIAMETER*1)):
+    if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250:
         print("CIRCLE", 1)
-    if event.y > (BORDEREDGE*1 + DIAMETER*(0) and event.y < (BORDEREDGE*1 + DIAMETER*1) and event.x > (BORDEREDGE*2 + DIAMETER*(1)) and event.x < (BORDEREDGE*2 + DIAMETER*2)):
+    if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500:
         print("CIRCLE", 2)
-    if event.y > (BORDEREDGE*1 + DIAMETER*(0) and event.y < (BORDEREDGE*1 + DIAMETER*1) and event.x > (BORDEREDGE*3 + DIAMETER*(2)) and event.x < (BORDEREDGE*3 + DIAMETER*3)):
+    if event.y > 50 and event.y < 250 and event.x > 550 and event.x < 750:
         print("CIRCLE", 3) 
         
         
         #ROW 2
-    if event.y > (BORDEREDGE*2 + DIAMETER*(1) and event.y < (BORDEREDGE*2 + DIAMETER*2) and event.x > (BORDEREDGE*1 + DIAMETER*(0)) and event.x < (BORDEREDGE*1 + DIAMETER*1)):
+    if event.y > 300 and event.y < 500 and event.x > 50 and event.x < 250:
         print("CIRCLE", 4)
-    if event.y > (BORDEREDGE*2 + DIAMETER*(1) and event.y < (BORDEREDGE*2 + DIAMETER*2) and event.x > (BORDEREDGE*2 + DIAMETER*(1)) and event.x < (BORDEREDGE*2 + DIAMETER*2)):
+    if event.y > 300 and event.y < 500 and event.x > 300 and event.x < 500:
         print("CIRCLE", 5)
-    if event.y > (BORDEREDGE*2 + DIAMETER*(1) and event.y < (BORDEREDGE*2 + DIAMETER*2) and event.x > (BORDEREDGE*3 + DIAMETER*(2)) and event.x < (BORDEREDGE*3 + DIAMETER*3)):
-        print("CIRCLE", 6)
+    if event.y > 300 and event.y < 500 and event.x > 550 and event.x < 750:
+        print("CIRCLE", 6) 
         
         #ROW3
-    if event.y > (BORDEREDGE*3 + DIAMETER*(2) and event.y < (BORDEREDGE*3 + DIAMETER*3) and event.x > (BORDEREDGE*1 + DIAMETER*(0)) and event.x < (BORDEREDGE*1 + DIAMETER*1)):
+   if event.y > 550 and event.y < 750 and event.x > 50 and event.x < 250:
         print("CIRCLE", 7)
-    if event.y > (BORDEREDGE*3 + DIAMETER*(2) and event.y < (BORDEREDGE*3 + DIAMETER*3) and event.x > (BORDEREDGE*2 + DIAMETER*(1)) and event.x < (BORDEREDGE*2 + DIAMETER*2)):
+    if event.y > 550 and event.y < 750 and event.x > 300 and event.x < 500:
         print("CIRCLE", 8)
-    if event.y > (BORDEREDGE*3 + DIAMETER*(2) and event.y < (BORDEREDGE*3 + DIAMETER*3) and event.x > (BORDEREDGE*3 + DIAMETER*(2)) and event.x < (BORDEREDGE*3 + DIAMETER*3)):
-        print("CIRCLE", 9)
-    
+    if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750:
+        print("CIRCLE", 9) 
         
 
 
