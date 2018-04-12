@@ -99,6 +99,10 @@ def mouseClick(event):
 
 
 def score():
+    data["score"] += 10
+    data["scoreText"].destroy() #remove old writing
+    scoreBox = TextAsset("Score = " + str(data["score"]))
+    data["scoreText"] = Sprite(scoreBox,(0,200))
     
     
 
@@ -110,7 +114,10 @@ if __name__ == "__main__":
     data = {}
     data['score'] = 0
     data['frames'] = 0
-
+    
+    
+    scoreBox = TextAsset("Score = 0")
+    data["scoreText"] = Sprite(scoreBox,(0,200))
     
     
     blackOutline = LineStyle(1, black)
