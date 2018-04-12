@@ -63,36 +63,36 @@ def mouseClick(event):
     
     
         #ROW 1
-    if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250 and data["circle 1"] = True:
+    if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250 and data["circle 1"] == True:
         print("CIRCLE", 1)
         score()
-    if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500 and data["circle 2"] = True:
+    if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500 and data["circle 2"] == True:
         print("CIRCLE", 2)
         score()
-    if event.y > 50 and event.y < 250 and event.x > 550 and event.x < 750 and data["circle 3"] = True:
+    if event.y > 50 and event.y < 250 and event.x > 550 and event.x < 750 and data["circle 3"] == True:
         print("CIRCLE", 3) 
         score()
         
         
         #ROW 2
-    if event.y > 300 and event.y < 500 and event.x > 50 and event.x < 250 and data["circle 4"] = True:
+    if event.y > 300 and event.y < 500 and event.x > 50 and event.x < 250 and data["circle 4"] == True:
         print("CIRCLE", 4)
         score()
-    if event.y > 300 and event.y < 500 and event.x > 300 and event.x < 500 and data["circle 5"] = True:
+    if event.y > 300 and event.y < 500 and event.x > 300 and event.x < 500 and data["circle 5"] == True:
         print("CIRCLE", 5)
         score()
-    if event.y > 300 and event.y < 500 and event.x > 550 and event.x < 750 and data["circle 6"] = True:
+    if event.y > 300 and event.y < 500 and event.x > 550 and event.x < 750 and data["circle 6"] == True:
         print("CIRCLE", 6) 
         score()
         
         #ROW3
-    if event.y > 550 and event.y < 750 and event.x > 50 and event.x < 250 and data["circle 7"] = True:
+    if event.y > 550 and event.y < 750 and event.x > 50 and event.x < 250 and data["circle 7"] == True:
         print("CIRCLE", 7)
         score()
-    if event.y > 550 and event.y < 750 and event.x > 300 and event.x < 500 and data["circle 8"] = True:
+    if event.y > 550 and event.y < 750 and event.x > 300 and event.x < 500 and data["circle 8"] == True:
         print("CIRCLE", 8)
         score()
-    if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750 and data["circle 9"] = True:
+    if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750 and data["circle 9"] == True:
         print("CIRCLE", 9) 
         score()
         
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     
     
     scoreBox = TextAsset("Score = 0")
-    data["scoreText"] = Sprite(scoreBox,(0,200))
+    data["scoreText"] = Sprite(scoreBox,(0,50))
     
     
     blackOutline = LineStyle(1, black)
@@ -142,4 +142,5 @@ if __name__ == "__main__":
             
     
     App().listenMouseEvent("click", mouseClick)
-    App().run() 
+    App().run(step) 
+
