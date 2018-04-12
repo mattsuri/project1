@@ -68,7 +68,6 @@ def mouseClick(event):
     
         #ROW 1
     if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250 and data["circle 1"] == True:
-        
         score()
         moleSpawner()
     if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500 and data["circle 2"] == True:
