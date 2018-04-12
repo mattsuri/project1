@@ -20,7 +20,7 @@ DIAMETER = 200
 
 def step():
     data['frames'] += 1
-    if data['frames'] % 100 == 0:
+    if data['frames'] % 50 == 0:
         moleSpawner()
         
 def moleSpawner():
@@ -69,35 +69,62 @@ def mouseClick(event):
         #ROW 1
     if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250 and data["circle 1"] == True:
         score()
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
     if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500 and data["circle 2"] == True:
         score()
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
     if event.y > 50 and event.y < 250 and event.x > 550 and event.x < 750 and data["circle 3"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
         
         
         #ROW 2
     if event.y > 300 and event.y < 500 and event.x > 50 and event.x < 250 and data["circle 4"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
     if event.y > 300 and event.y < 500 and event.x > 300 and event.x < 500 and data["circle 5"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
     if event.y > 300 and event.y < 500 and event.x > 550 and event.x < 750 and data["circle 6"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
         
         #ROW3
     if event.y > 550 and event.y < 750 and event.x > 50 and event.x < 250 and data["circle 7"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
     if event.y > 550 and event.y < 750 and event.x > 300 and event.x < 500 and data["circle 8"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
     if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750 and data["circle 9"] == True:
-        moleSpawner()
+        for i in range (0,3):
+            height = BORDEREDGE + i*GAP
+            for i in range (0,3):
+                Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
         score()
         
     data["circle 1"] = False
