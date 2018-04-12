@@ -27,6 +27,13 @@ def moleSpawner():
     num = randint(1,9)
     data["frames"]=0
     
+    for i in range (0,3):
+        height = BORDEREDGE + i*GAP
+        for i in range (0,3):
+            Sprite(whiteCircle, (BORDEREDGE + i*GAP, height ))
+    
+
+    
     if num == 1:
         data["circle 1"] = True
         Sprite(redCircle, (50 + 0*250, 50 + 250*0 ))
