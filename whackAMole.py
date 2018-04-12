@@ -34,25 +34,25 @@ def moleSpawner():
         data["circle 2"] = True
         Sprite(redCircle, (50 + 1*250, 50 + 250*0 ))
     if num == 3:
-        data["circle 2"] = True
+        data["circle 3"] = True
         Sprite(redCircle, (50 + 2*250, 50 + 250*0 ))
     if num == 4:
-        data["circle 1"] = True
+        data["circle 4"] = True
         Sprite(redCircle, (50 + 0*250, 50 + 250*1 ))
     if num == 5:
-        data["circle 2"] = True
+        data["circle 5"] = True
         Sprite(redCircle, (50 + 1*250, 50 + 250*1 ))
     if num == 6:
-        data["circle 2"] = True
+        data["circle 6"] = True
         Sprite(redCircle, (50 + 2*250, 50 + 250*1 ))
     if num == 7:
-        data["circle 1"] = True
+        data["circle 7"] = True
         Sprite(redCircle, (50 + 0*250, 50 + 250*2 ))
     if num == 8:
-        data["circle 2"] = True
+        data["circle 8"] = True
         Sprite(redCircle, (50 + 1*250, 50 + 250*2 ))
     if num == 9:
-        data["circle 2"] = True
+        data["circle 9"] = True
         Sprite(redCircle, (50 + 2*250, 50 + 250*2 ))
         
         
@@ -63,29 +63,38 @@ def mouseClick(event):
     
     
         #ROW 1
-    if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250:
+    if event.y > 50 and event.y < 250 and event.x > 50 and event.x < 250 and data["circle 1"] = True:
         print("CIRCLE", 1)
-    if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500:
+        score()
+    if event.y > 50 and event.y < 250 and event.x > 300 and event.x < 500 and data["circle 2"] = True:
         print("CIRCLE", 2)
-    if event.y > 50 and event.y < 250 and event.x > 550 and event.x < 750:
+        score()
+    if event.y > 50 and event.y < 250 and event.x > 550 and event.x < 750 and data["circle 3"] = True:
         print("CIRCLE", 3) 
+        score()
         
         
         #ROW 2
-    if event.y > 300 and event.y < 500 and event.x > 50 and event.x < 250:
+    if event.y > 300 and event.y < 500 and event.x > 50 and event.x < 250 and data["circle 4"] = True:
         print("CIRCLE", 4)
-    if event.y > 300 and event.y < 500 and event.x > 300 and event.x < 500:
+        score()
+    if event.y > 300 and event.y < 500 and event.x > 300 and event.x < 500 and data["circle 5"] = True:
         print("CIRCLE", 5)
-    if event.y > 300 and event.y < 500 and event.x > 550 and event.x < 750:
+        score()
+    if event.y > 300 and event.y < 500 and event.x > 550 and event.x < 750 and data["circle 6"] = True:
         print("CIRCLE", 6) 
+        score()
         
         #ROW3
-    if event.y > 550 and event.y < 750 and event.x > 50 and event.x < 250:
+    if event.y > 550 and event.y < 750 and event.x > 50 and event.x < 250 and data["circle 7"] = True:
         print("CIRCLE", 7)
-    if event.y > 550 and event.y < 750 and event.x > 300 and event.x < 500:
+        score()
+    if event.y > 550 and event.y < 750 and event.x > 300 and event.x < 500 and data["circle 8"] = True:
         print("CIRCLE", 8)
-    if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750:
+        score()
+    if event.y > 550 and event.y < 750 and event.x > 550 and event.x < 750 and data["circle 9"] = True:
         print("CIRCLE", 9) 
+        score()
         
     data["circle 1"] = False
     data["circle 2"] = False
